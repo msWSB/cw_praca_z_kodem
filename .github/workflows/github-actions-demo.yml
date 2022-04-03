@@ -14,9 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:    
       - name: pylint
-        run: -pylint app.py
-  BuildAPP:
+        run: 
+          pylint app.py
+  BuildApp:
     runs_on: ubuntu-latest
     steps:    
       - name: docker build
-          run: docker build --tag test-flask-app .
+        run:
+          docker build --tag test-flask-app .
