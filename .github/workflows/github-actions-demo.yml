@@ -17,7 +17,7 @@ jobs:
         run: 
           pylint app.py
   BuildApp:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:    
       - name: docker build
         run:
