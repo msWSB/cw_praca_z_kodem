@@ -1,7 +1,7 @@
 name: My first Github Workflow
 on: [push]
 jobs:
-  MyFirst-github-actions:
+  myFirst-github-actions:
     runs-on: ubuntu-latest
     steps:
       - name: Python version
