@@ -1,0 +1,14 @@
+name: My first Github Workflow
+on: [push]
+jobs:
+  MyFirst-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Python version 
+        run: python3 --version
+      - name: docker version
+	run: docker --version
+      - name: pylint
+	run: -pylint app.py
+      - name: docker build
+	run: docker build --tag test-flask-app .
