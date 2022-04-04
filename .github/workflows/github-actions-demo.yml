@@ -15,7 +15,7 @@ jobs:
         pip install pylint pylint-exit conan
     - name: Analysing the code with pylint
       run:
-        pylint `find . -name '*.py'|xargs` || pylint-exit $?
+        pylint find . -name app.py
   myFirst-github-actions:
     runs-on: ubuntu-latest
     steps:
