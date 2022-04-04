@@ -15,7 +15,7 @@ jobs:
         pip install pylint pylint-exit conan
     - name: Analysing the code with pylint
       run:
-        pylint find . -name app.py
+        pylint $(git ls-files app.py)
   myFirst-github-actions:
     runs-on: ubuntu-latest
     steps:
